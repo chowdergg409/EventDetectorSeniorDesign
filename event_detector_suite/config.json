@@ -1,0 +1,72 @@
+{
+    "detection_parameters": {
+      "hfo": {
+        "amplitude": {"k": 1.37, "theta": 1.73},
+        "frequency_dominance": {"k": 1.26, "theta": 0.46},
+        "product": {"k": 1.28, "theta": 34.4},
+        "cycles": {"k": 1.76, "theta": 4.04},
+        "combination": {"k": 2.24, "theta": 0.53}
+      },
+      "ied": {
+        "int": 5000,
+        "block_size_sec": 60,
+        "spike_band": [20, 50],
+        "display_band": [1, 35],
+        "artifact_slope_thresh": 10.0,
+        "spike_amplitude_thresh": 600.0,
+        "spike_slope_thresh": 7.0,
+        "spike_duration_thresh": 10.0,
+        "target_median_amp": 70.0
+      },
+      "seizure": {
+        "fs": 5000,
+        "short_window_sec": 2.0,
+        "long_window_sec": 30.0,
+        "threshold_offset": 1.5
+      }
+    },
+    "visualization": {
+      "colors": {
+        "brain_mesh": [1.0, 1.0, 1.0, 0.1],
+        "brain_edges": [1.0, 1.0, 1.0, 0.1],
+        "electrode_default": [1.0, 0.0, 0.0, 1.0],
+        "electrode_highlight": [0.0, 1.0, 0.0, 1.0],
+        "seizure_indicator_on": "#00FF00",
+        "seizure_indicator_off": "#FF0000",
+        "table_highlight": "#FFDCDC"
+      },
+      "camera": {
+        "default_position": [300, -90, 180],
+        "rotation_sensitivity": 1.0,
+        "zoom_sensitivity": 1.0
+      },
+      "electrodes": {
+        "radius": 3.0,
+        "resolution": 10,
+        "label_style": "background: white; color: black; border: 1px solid black"
+      },
+      "highlight_states": {
+        "event": [0.0, 1.0, 0.0, 1.0],
+        "active": [0.0, 0.0, 1.0, 1.0],
+        "inactive": [0.5, 0.5, 0.5, 1.0]
+      }
+    },
+    "ui_settings": {
+      "window": {
+        "default_size": [1000, 600],
+        "default_position": [100, 100]
+      },
+      "plots": {
+        "respiratory": {
+          "background": "white",
+          "line_color": "blue",
+          "line_width": 2,
+          "grid": true
+        }
+      },
+      "tables": {
+        "hfo_amplitude_threshold": 100.0,
+        "ied_duration_threshold": 70.0
+      }
+    }
+  }
